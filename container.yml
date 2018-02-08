@@ -1,0 +1,11 @@
+version: "1"
+services:
+  host1:
+    image: "registry.access.redhat.com/rhel7/rhel:7.4"
+    command: /bin/false
+  host2:
+    image: "registry.access.redhat.com/rhel7/rhel:7.4"
+    ports:
+      - "80:80"
+    command: /bin/false
+    
